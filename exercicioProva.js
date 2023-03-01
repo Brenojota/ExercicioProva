@@ -2,6 +2,8 @@
 encontra o maior elemento da matriz. Escreva um algoritmo que leia uma matriz 10 X 10 de números e encontre seu
 elemento minimax, mostrando também sua posição*/
 
+
+// CRIANDO A MATRIZ
 let Matriz = new Array(4)
 
 Matriz[0] = [0,3,400,1]
@@ -14,6 +16,7 @@ let menor = 0
 let numeroLista = 0
 let posMenor=0
 
+// BUSCANDO O MAIOR NUMERO, BUSCANDO A POSICAO DA LISTA
 for(let i = 0 ; i < Matriz.length ; i++){
 
     for(let k = 0 ; k < Matriz.length ; k++){
@@ -26,10 +29,8 @@ for(let i = 0 ; i < Matriz.length ; i++){
 
     }
     
-
+   // BUSCANDO O MENOR NUMERO DENTRO DA POSICAO DA LISTA QUE JÁ TENHO
     for(let m = 0 ; m < Matriz[numeroLista].length ; m++){
-
-
 
         if(Matriz[numeroLista][m] < menor){
 
